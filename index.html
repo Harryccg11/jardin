@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardín de Mensajes Mágicos 💖</title>
+    <meta name="description" content="Un hermoso juego interactivo lleno de mensajes románticos para alguien muy especial">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Sparkles de fondo -->
+        <div id="sparkles-container"></div>
+        
+        <!-- Header -->
+        <div class="header">
+            <h1 class="title">Jardín de Mensajes Mágicos 💖</h1>
+            <p class="subtitle">¡Encuentra todos los elementos mágicos y descubre mensajes especiales! ✨</p>
+            <p class="counter">Elementos encontrados: <span id="counter">0</span>/10</p>
+        </div>
+
+        <!-- Área de juego -->
+        <div id="game-area"></div>
+
+        <!-- Mensaje actual -->
+        <div id="message-card" class="message-card hidden">
+            <div class="message-content">
+                <div class="message-heart">💖</div>
+                <p id="current-message"></p>
+            </div>
+        </div>
+
+        <!-- Modal de juego completado -->
+        <div id="completion-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="completion-emoji">🎉💖✨</div>
+                <h2>¡Has encontrado todos los mensajes!</h2>
+                <p>Cada mensaje fue escrito pensando en lo especial que eres. 
+                   Eres la persona más maravillosa del mundo y te amo infinitamente. 💕</p>
+                <button id="reset-button" class="reset-btn">Jugar de Nuevo 💖</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
